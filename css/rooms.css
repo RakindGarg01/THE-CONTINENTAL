@@ -1,0 +1,220 @@
+body{
+    margin:0px;
+    padding: 0px;
+  }
+  *{  
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+      font-family: 'cario', cursive;
+    }
+  header{
+      font-family: montserrat;
+      padding: 0;
+      margin: 0;
+    }
+    nav{
+      background-image: linear-gradient(to right,#eee, #aaa);
+      height: 100px;
+      width: 100%;
+      z-index: 12;  
+      position: fixed;
+      top:0px;
+    }
+    label.logo{
+      color: black;
+    line-height: 80px;
+    padding-left: 30px;
+    padding-right: 0px;
+    }
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li , button1{
+      display: inline-block;
+      line-height: 60px;
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: black;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+  
+    a.active,a:hover{
+      background: #1b9bff;
+      transition: .5s;
+    }
+    .checkbtn{
+      font-size: 30px;
+      color: black;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    #check{
+      display: none;
+    }
+    @media (max-width: 1065px){
+      label.logo{
+        font-size: 30px;
+        padding-left: 15px;
+      }
+  
+      nav ul li a{
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 997px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: #0082e6;
+        color:white;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+    
+      #btn-link:hover{
+        background:#1470b6;
+      }
+      /*Content*/
+      .sectionpad{
+          margin:2rem;
+      }
+      .image{
+          height:300px;
+          width:300px;
+          width:35%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      #star{
+        color: #fdcc0d;
+      }
+      .text{
+          width:45%;
+          padding: 0px 50px;
+          text-align: justify;
+      }
+      .icons{
+          margin:5px;
+          display: flex;
+          color:#aaa;
+          justify-content: space-between;
+      }
+      .rate{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+      .room1{
+          border: 2px solid black;
+          border-radius: 10px;
+          padding:10px;
+          display: flex;
+      }
+      .booking-btn{
+          background-color: #0082e6;
+          padding:10px;
+          text-align: center;
+          font-size: 18px;
+          border-radius: 50px;
+          text-transform: uppercase;
+         
+      }
+      .booking-btn:visited{
+        color: black;
+      }
+      .room1:hover{
+        box-shadow: 5px 5px 10px #aaa;
+      }
+  
+     @media(max-width:997px){
+         .room1{
+             display:block;
+         }
+         .text,.rate{
+             width:100%;
+             text-align: center;
+         }
+         .icons{
+             justify-content: space-around;
+         }
+         .all-icons{
+             margin-left: 3rem;
+             margin-right: 3rem;
+         }
+             
+         .image{
+             width:100%;
+             height: auto;
+         }
+     }
+     /*Footer*/
+    
+    .parentroom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width:100%;
+    }
+    #abcd1:hover{
+        color: black;
+    }
+    .card7,.card8,.card9{
+        width: 30%;
+        text-align:justify;
+        color: white;
+        text-align: center;
+
+    }
+    @media (max-width:800px){
+        .parentroom{
+            display: block;
+        }
+        .card7,.card8,.card9{
+            width:90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media (max-width:500px){
+        .parentroom{
+            display: block;
+        }
+        .card7,.card8,.card9{
+            width:100%;
+            
+        }
+    }
+         

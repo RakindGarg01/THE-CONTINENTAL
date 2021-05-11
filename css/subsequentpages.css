@@ -1,0 +1,368 @@
+/*header*/
+body{
+  margin:0px;
+  padding: 0px;
+}
+*{  
+    text-decoration: none;
+    
+    box-sizing: border-box;
+    font-family: 'cario', cursive;
+  }
+header{
+    font-family: montserrat;
+    padding: 0;
+    margin: 0;
+  }
+  nav{
+    background-image: linear-gradient(to right,#eee, #aaa);
+    height: 100px;
+    width: 100%;
+    z-index: 12;  
+    position: fixed;
+    top:0px;
+    list-style: none;
+  }
+  label.logo{
+    color: black;
+    line-height: 80px;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li , button1{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1065px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 15px;
+    }
+
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 997px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: #0082e6;
+      color:white;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+    #btn-link:hover{
+      background:#1470b6;
+    }
+
+
+
+#panel, #flip,#close,#close1,#panel1 {
+  padding: 5px;
+  text-align: center;
+  background-color: #eee;
+  
+}
+*{
+  font-family: 'cario', cursive;
+}
+
+#panel,#panel1 {
+  padding: 50px;
+  display: none;
+  margin:2rem;
+  padding:2rem;
+  text-align: justify;
+  font-size:20px;
+}
+#flap{
+  margin:2rem;
+  padding:2rem;
+  border-left:10px solid black;
+  text-align: justify;
+  font-size:22px;
+  background-color:#eee;
+  
+  position:relative
+}
+#flip,#flip1{
+  color:#aaa;
+  right:10px;
+  top:20px;
+  position:absolute
+  
+}
+
+.son,.daughter{
+  width:60%;
+  padding: 13px;
+  text-align:center;
+  line-height: 1.6;
+}
+.daughter{
+  width:40%;
+}
+.parent{
+  display:flex;
+}
+.divbb{
+  margin: 2rem;
+  line-height: 1.3;
+  text-align: justify;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  
+}
+.divbb ol li{
+  margin-bottom: 5px;
+}
+.xyx ol{
+  list-style-image: url('../main page images/sanitizer1.png');   
+}
+.divbb ol{
+  list-style-image: url('../main page images/sanitizer.png');   
+}
+@media(max-width:900px){
+  
+  .parent{
+      display:block;
+  }
+  .son,.daughter{
+      width: 100%;
+  }
+  .divbb{
+      margin-right: 2rem;
+      width:90%;
+  }
+  .napta{
+    margin:1rem;
+  }
+  
+}
+.charge{
+background-color: #eee;
+text-align: justify;
+font-size: 20px;
+padding:20px
+}
+.napta{
+  margin:2rem;
+  padding:1rem;
+}
+
+  /*Contact us*/
+  #submitSuccess{
+    position: fixed;
+    top: 110px;
+    right: 50px;
+    background: black;
+    
+    width: 200px;
+    height: auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+  }
+  .sectionpad {
+    margin : 3rem;
+    background-image: url('main\ page\ images/contact.png');
+    background-size: cover;
+    background-position: -300px 0px;
+  }
+  .myform{
+    background-image : linear-gradient(to left, #aaa, transparent);
+    padding: 50px;
+  }
+  @media(max-width:770px){
+    .myform{
+      background-color: #aaa;
+    }
+  }
+
+  .parentroom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+}
+#abcd1:hover{
+    color: black;
+}
+.card7,.card8,.card9{
+    width: 30%;
+    text-align:justify;
+    color: white;
+    text-align: center;
+
+}
+@media (max-width:800px){
+    .parentroom{
+        display: block;
+    }
+    .card7,.card8,.card9{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:500px){
+    .parentroom{
+        display: block;
+    }
+    .card7,.card8,.card9{
+        width:100%;
+        
+    }
+}
+.footer{
+  margin:0px;
+  padding: 0px;
+}
+/*ABOUT*/
+.tab{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-text{
+  text-align: center;
+}
+#content{
+  line-height: 1.7;
+  text-align: justify;
+}
+.content1{
+  margin:0px;
+  padding:25px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content2{
+  text-align: center;
+  background-color: #eee;
+  padding:25px;
+}
+@media(max-width:997px){
+  .content1{
+    display:block;
+    text-align: center;
+  }
+  .tab{
+    width:100%;
+  }
+}
+@media(max-width:750px){
+  #p1{
+    text-align:justify;
+  }
+}
+@media(max-width:590px){
+  .tab{
+    display:block;
+  }
+}
+/*footer*/
+.parentroom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:100%;
+}
+#abcd1:hover{
+  color: black;
+}
+.card7,.card8,.card9{
+  width: 30%;
+  text-align:justify;
+  color: white;
+  text-align: center;
+
+}
+@media (max-width:800px){
+  .parentroom{
+      display: block;
+  }
+  .card7,.card8,.card9{
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+@media (max-width:500px){
+  .parentroom{
+      display: block;
+  }
+  .card7,.card8,.card9{
+      width:100%;
+      
+  }
+}
+.parallax {
+  background-image: url('../main page images/cover1.jpg');
+    height: 700px;
+    width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
